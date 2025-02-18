@@ -3084,6 +3084,7 @@ static void virt_machine_class_init(ObjectClass *oc, void *data)
     HotplugHandlerClass *hc = HOTPLUG_HANDLER_CLASS(oc);
     static const char * const valid_cpu_types[] = {
 #ifdef CONFIG_TCG
+        ARM_CPU_TYPE_NAME("cortex-r52"),
         ARM_CPU_TYPE_NAME("cortex-r5f"),
         ARM_CPU_TYPE_NAME("cortex-a7"),
         ARM_CPU_TYPE_NAME("cortex-a15"),
