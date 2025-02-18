@@ -3126,7 +3126,7 @@ static void virt_machine_class_init(ObjectClass *oc, void *data)
     mc->no_cdrom = 1;
     mc->pci_allow_0_address = true;
     /* We know we will never create a pre-ARMv7 CPU which needs 1K pages */
-    mc->minimum_page_bits = 12;
+    mc->minimum_page_bits = 10;
     mc->possible_cpu_arch_ids = virt_possible_cpu_arch_ids;
     mc->cpu_index_to_instance_props = virt_cpu_index_to_props;
 #ifdef CONFIG_TCG
